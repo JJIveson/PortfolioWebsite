@@ -50,7 +50,7 @@ const modalViews = document.querySelectorAll('.projects__modal'),
         modalBtns = document.querySelectorAll('.projects__button'),
         modalCloses = document.querySelectorAll('.projects__modal-close')
 
-let modal = function(modalClick) {
+var modal = function(modalClick) {
     modalViews[modalClick].classList.add('active-modal')
 }
 
@@ -61,27 +61,26 @@ modalBtns.forEach((modalBtn, i) => {
 })
 
 modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click', () =>{
+    modalClose.addEventListener('click', () => {
         modalViews.forEach((modalView) => {
             modalView.classList.remove('active-modal')
         })
     })
 })
 
-/* ====== Skills SWIPER ======== */
-let swiper = new Swiper('.skills__container', {
+/* ====== SKILLS SWIPER ======== */
+var swiper = new Swiper(".skillSwipper", {
     cssMode: true,
-    loop: true,
-
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+      el: ".swiper-pagination",
     },
-});
+    mousewheel: true,
+    keyboard: true,
+  });
 
 /*========================= SCROLL SECTIONS ACTIVE LINK ===========================*/
 const sections = document.querySelectorAll('section[id]')

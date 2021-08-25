@@ -1,10 +1,9 @@
 /*=====================Google Font Style===================================*/
-/*Merriweather*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-/*Rubik*/
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*Josefin Sans*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Allan */
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap');
+/* Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 /*Lobster*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /*Space Mono*/
@@ -59,7 +58,7 @@ Fog Blue Colour Pallete
 
 /*====================Font and typography================================*/
 
-    --body-font: font-family: 'Space Mono', serif;
+    --body-font: font-family: 'lato', serif;
 
 
 /*  .5rem = 8px, 1rem = 16 px, 1.5rem = 24px, 2rem = 32px*/
@@ -154,9 +153,13 @@ body {
     color: var(--text-color);
 }
 
-h1,h2,h3,h4 {
+h1,h2 ,h4 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
+}
+
+h3 {
+    color: var(--first-color);
 }
 
 ul {
@@ -187,7 +190,7 @@ section {
 
 .section__title {
     font-size: var(--h1-font-size);
-    font-family: lobster;
+    font-family: allan;
 }
 
 .section__subtitle {
@@ -239,7 +242,7 @@ nav {
 
 .nav__logo,
 .nav__toggle {
-    font-family: lobster;
+    font-family: allan;
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -269,7 +272,7 @@ nav {
         border-radius: 0 0 1.5rem 1.5rem;
         transition: .3s;
         background-color: var(--body-color);
-        font-family: lobster;
+        font-family: allan;
     }
 }
 
@@ -376,7 +379,7 @@ h1 {
     font-size: 380%;
     color: #FFF;
     margin-bottom: 5%;
-    font-family: lobster;
+    font-family: allan;
 }
 
 .btn {
@@ -386,7 +389,7 @@ h1 {
     background-color: #FFF;
     padding: 1% 2%;
     border-radius: 5px;
-    font-family: lobster;
+    font-family: allan;
 }
 
 .btn:hover {
@@ -509,7 +512,7 @@ h1 {
 }
 
 /*==================== SKILLS =======================*/
-.skills__container {
+.skillsSwiper {
     overflow: initial;
 }
 
@@ -518,6 +521,7 @@ h1 {
 }
 
 .skills__img {
+    display: block;
     width: 265px;
     border-radius: .5rem;
     justify-self: center;
@@ -533,11 +537,9 @@ h1 {
     margin-bottom: var(--mb-0-75);
 }
 
-.skills__button:hover .button__icon {
-    transform: translateX(.25rem);
-}
+/* ===============SWIPER CSS ===================== */
 
-.swiper-button-prev::after,
+ .swiper-button-prev::after,
 .swiper-button-next::after{
     display: none;
 }
@@ -555,7 +557,7 @@ h1 {
     right: .5rem;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-pagination > .swiper-pagination-bullets {
     bottom: -2.5rem;
 }
 
@@ -584,6 +586,10 @@ h1 {
     transition: .3s;
     text-align: right;
     justify-content: space-between;
+}
+
+.projects__content > h3 {
+    color: (--first-color);
 }
 
 .projects__content:hover{
@@ -624,6 +630,24 @@ h1 {
     background-size: 100%;
 }
 
+.project2 {
+    background-image: url('../img/hatFinder.png');
+    background-position: center;
+    background-size: 60%;
+}
+
+.project3 {
+    background-image: url('../img/spotify1.png');
+    background-position: center;
+    background-size: 100%;
+}
+
+.project4 {
+    background-image: url('../img/python2.png');
+    background-position: center;
+    background-size: 100%;
+}
+
 .projects__modal {
     position: fixed;
     top: 0;
@@ -651,10 +675,6 @@ h1 {
 
 .projects__modal-projects {
     row-gap: 1rem;
-}
-
-.projects__modal-projects {
-
 }
 
 .projects__modal-title {
@@ -942,7 +962,7 @@ h1 {
     }
     .nav__menu {
         margin-left: auto;
-        font-family: lobster;
+        font-family: allan;
     }
     .change__theme {
         margin: 0;
