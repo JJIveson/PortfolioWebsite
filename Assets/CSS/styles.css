@@ -516,6 +516,11 @@ h1 {
     padding: 0 1.5rem;
 }
 
+.skills__data {
+    text-align: center;
+    justify-content: center;
+}
+
 .skills__img {
     display: block;
     width: 265px;
@@ -837,6 +842,14 @@ h1 {
 
     .skills__content{
         align-items: center;
+    }
+
+    .skills__data {
+        text-align: left;
+        justify-content: none;
+    }
+    .skills__description {
+        margin-right: 10px;
     }
 
     .projects__container {
