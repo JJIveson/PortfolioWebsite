@@ -587,6 +587,10 @@ h1 {
     justify-content: space-between;
 }
 
+.projects__content > p {
+    text-align: left;
+}
+
 .projects__content:hover{
     box-shadow: 0 8px 16px rgba(0,0,0,.15);
 }
@@ -598,7 +602,16 @@ h1 {
     margin-bottom: var(--mb-1);
 }
 
-.projects__title{
+.projects__title {
+    font-size: var(-h3-font-size);
+    margin-bottom: var(--mb-1);
+    font-weight: var(--font-medium);
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.projects__description {
     font-size: var(-h3-font-size);
     margin-bottom: var(--mb-1);
     font-weight: var(--font-medium);
@@ -617,6 +630,11 @@ h1 {
 
 .projects__button:hover {
     transform: scale(1.05);
+}
+
+.projects__content {
+    background-color: gray;
+    z-index: 100;
 }
 
 .project1 {
@@ -642,61 +660,6 @@ h1 {
     background-image: url('../img/python2.png');
     background-position: center;
     background-size: 100%;
-}
-
-.projects__modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,.15);
-    display: flex;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    padding: 0 1rem;
-    z-index: var(--z-modal);
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-}
-
-.projects__modal-content {
-    position: relative;
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: .5rem;
-}
-
-.projects__modal-projects {
-    row-gap: 1rem;
-}
-
-.projects__modal-title {
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-1-5);
-}
-
-.projects__modal-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    color: var(--first-color);
-    cursor: pointer;
-}
-
-.projects__modal-icon {
-    color: var(--first-color);
-    margin-right: var(--mb-0-25);
-}
-
-/*ACTIVE MODAL*/
-.active-modal {
-    opacity: 1;
-    visibility: visible;
 }
 
 /*==================== CONTACT ME =======================*/
