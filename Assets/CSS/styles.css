@@ -552,6 +552,9 @@ h1 {
 .swiper-button-next {
     right: .5rem;
 }
+.swiper-pagination {
+    display: none;
+}
 
 .swiper-pagination > .swiper-pagination-bullets {
     bottom: -2.5rem;
@@ -909,7 +912,6 @@ h1 {
         align-items: center;
     }
 
-
     .projects__container {
         gap: 1.5rem;
         grid-template-columns: repeat(2, 1fr);
@@ -917,6 +919,10 @@ h1 {
 
     .wrapper__section {
         justify-content: center;
+    }
+
+    .swiper-pagination {
+        display: block;
     }
 }
 
