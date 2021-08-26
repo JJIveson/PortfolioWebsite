@@ -587,10 +587,6 @@ h1 {
     justify-content: space-between;
 }
 
-.projects__content > h3 {
-    color: (--first-color);
-}
-
 .projects__content:hover{
     box-shadow: 0 8px 16px rgba(0,0,0,.15);
 }
@@ -865,42 +861,10 @@ h1 {
     .nav__list {
         column-gap: 0;
     }
-
-    .home__container {
-        grid-template-columns: .25fr 3fr;
-    }
-    .home__blob {
-        width: 180px;
-    }
-
-    .services__container {
-        grid-template-columns: max-content;
-        justify-content: center;
-    }
-    .services__content {
-        padding-right: 3.5rem;
-        padding-left: 3.5rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
-    .services__modal {
-        padding: 0 .5rem;
-    }
 }
 
 /*=============FOR MEDIUM DEVICES===================*/
 @media screen and (min-width: 568px) {
-    .home__content {
-        grid-template-columns: max-content 1fr 1fr;
-    }
-    .home__data{
-        grid-column: initial;
-    }
-    .home__img {
-        order: 1;
-        justify-self: center;
-    }
-
     .about__container,
     .skills__content,
     .contact__container
@@ -974,24 +938,6 @@ h1 {
     .change__theme {
         margin: 0;
     }
-
-    .home__container{
-        row-gap: 5rem;
-    }
-    .home__content{
-        padding-top: 5.5rem;
-        column-gap: 2rem;
-    }
-    .home__blob {
-        width: 270px;
-    }
-    .home__scroll{
-        display: block;
-    }
-    .home__scroll-button {
-        margin-left: 3rem;
-    }
-
     .about__container {
         column-gap: 5rem;
     }
@@ -1008,32 +954,15 @@ h1 {
     .about__buttons{
         justify-content: initial;
     }
-
-    .services__container{
-        grid-template-columns: repeat(3, 218px);
-        justify-content: center;
-    }
-    .services__icon {
-        font-size: 2rem;
-    }
-    .services__content {
-        padding: 6rem 0 2rem 2.5rem;
-    }
-    .services__modal-content{
-        width: 450px;
-    }
-
     .skills__img{
         width: 320px;
     }
     .skills__content{
         align-items: center;
     }
-
     .contact__container {
         grid-template-columns: repeat(2, 1fr);
     }    
-
     .footer__container{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -1058,17 +987,6 @@ h1 {
     .main,
     .footer__container {
         padding: 0;
-    }
-
-    .home__blob{
-        width: 320px;
-    }
-    .home__social {
-        transform: translateX(-6rem);
-    }
-
-    .services__container {
-        grid-template-columns: repeat(3, 238px);
     }
 
     .skills__content{
