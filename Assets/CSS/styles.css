@@ -153,13 +153,9 @@ body {
     color: var(--text-color);
 }
 
-h1,h2 ,h4 {
+h1, h2, h3, h4 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
-}
-
-h3 {
-    color: var(--first-color);
 }
 
 ul {
@@ -628,6 +624,7 @@ h1 {
     background-image: url('../img/project1_screenshot.PNG');
     background-position: center;
     background-size: 100%;
+    z-index: 1;
 }
 
 .project2 {
