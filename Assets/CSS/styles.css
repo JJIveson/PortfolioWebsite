@@ -125,7 +125,7 @@ body.dark-theme {
 }
 
 .change-theme {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--title-color);
     margin-right: var(--mb-1);
     cursor: pointer;
@@ -222,11 +222,7 @@ section {
     background-color: var(--container-color);
 }
 
-/*====================NAV================================
-
-Still need to create a logo with name
-Need to add a highlight section for current section
-*/
+/*====================NAV================================*/
 nav {
     max-width: 1500px;
     height: var(--header-height);
@@ -240,6 +236,7 @@ nav {
 .nav__toggle {
     font-family: allan;
     color: var(--title-color);
+    font-size: var(--h2-font-size);
     font-weight: var(--font-medium);
 }
 
@@ -248,7 +245,7 @@ nav {
 }
 
 .nav__toggle {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     cursor: pointer;
 
 }
@@ -281,7 +278,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--small-font-size);
+    font-size: var(--h2-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -524,6 +521,13 @@ h1 {
 .skills__img {
     display: block;
     width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.skills__img__big {
+    display: block;
+    width: 235px;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -937,9 +941,14 @@ h1 {
     .about__buttons{
         justify-content: initial;
     }
-    .skills__img{
+    .skills__img {
         width: 320px;
     }
+
+    .skills__img__big {
+        width: 280px;
+    }
+
     .skills__content{
         align-items: center;
     }
