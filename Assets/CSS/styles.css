@@ -236,7 +236,7 @@ nav {
 .nav__toggle {
     font-family: allan;
     color: var(--title-color);
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
 
@@ -278,7 +278,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -912,6 +912,14 @@ h1 {
     .nav__toggle {
         display: none;
     }
+
+    .nav__logo {
+        font-size: var(--h2-font-size);
+    }
+
+    .nav__link {
+        font-size: var(--h2-font-size);
+    }
     .nav__list {
         display: flex;
         column-gap: 2rem;
@@ -979,6 +987,14 @@ h1 {
     .main,
     .footer__container {
         padding: 0;
+    }
+
+    .nav__logo {
+        font-size: var(--h2-font-size);
+    }
+
+    .nav__link {
+        font-size: var(--h2-font-size);
     }
 
     .skills__content{
